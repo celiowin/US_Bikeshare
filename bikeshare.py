@@ -5,9 +5,9 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-monthList = ['january', 'february', 'march', 'april', 
-             'may', 'june', 'july', 'august', 'september', 
-             'october', 'november', 'december']
+monthList = ['jan', 'feb', 'mar', 'apr', 
+             'may', 'jun', 'jul', 'aug', 'sep', 
+             'oct', 'nov', 'dec']
 dayList = ['monday', 'tuesday', 'wednesday', 'thursday', 
              'friday', 'saturday', 'sunday']
 
