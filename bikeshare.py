@@ -5,9 +5,9 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-monthList = ['january', 'february', 'march', 'april', 
-             'may', 'june', 'july', 'august', 'september', 
-             'october', 'november', 'december']
+monthList = ['jan', 'feb', 'mar', 'apr', 
+             'may', 'jun', 'jul', 'aug', 'sep', 
+             'oct', 'nov', 'dec']
 dayList = ['monday', 'tuesday', 'wednesday', 'thursday', 
              'friday', 'saturday', 'sunday']
 
@@ -229,13 +229,13 @@ def main():
         for i,(index,row) in enumerate(df.iterrows()):
             print('\n', row)
             if counter%5 == 0:
-                if input('\nWould you like to view more records? (Yes or No)').lower() == 'no':
+                if input('\nWould you like to view more records? (Yes or No) ').lower() == 'no':
                     break
             elif (i == df.shape[0]):
                 break
             counter += 1
             
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? (Yes or No) ').lower()
         if restart.lower() != 'yes':
             break
 
