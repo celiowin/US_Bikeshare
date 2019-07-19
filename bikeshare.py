@@ -229,13 +229,13 @@ def main():
         for i,(index,row) in enumerate(df.iterrows()):
             print('\n', row)
             if counter%5 == 0:
-                if input('\nWould you like to view more records? (Yes or No)').lower() == 'no':
+                if input('\nWould you like to view more records? (Yes or No) ').lower() == 'no':
                     break
             elif (i == df.shape[0]):
                 break
             counter += 1
             
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? (Yes or No) ').lower()
         if restart.lower() != 'yes':
             break
 
